@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   root 'pages#index'
+  devise_for :users
 end
