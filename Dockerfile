@@ -2,10 +2,6 @@
 ARG RUBY_VERSION=3.2.2
 FROM ruby:$RUBY_VERSION
 
-# RUN curl -I https://www.google.com
-
-CMD ["curl", "https://www.google.com"]
-
 # # Install libvips for Active Storage preview support
 # RUN apt-get update -qq && \
 #     apt-get install -y build-essential libvips && \
