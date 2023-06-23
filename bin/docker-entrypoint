@@ -1,8 +1,12 @@
-#!/bin/bash
+#!/bin/sh
 
-# If running the rails server then create or migrate existing database
-if [ "${*}" == "./bin/rails server" ]; then
+set -e
+
+echo "Running Docker entrypoint"
+echo "$0 $@"
+
+if [ "$1" = "rails" ] && [ "$2" = "server" ]; then
   ./bin/rails db:prepare
 fi
 
-exec "${@}"
+exec "$@"
