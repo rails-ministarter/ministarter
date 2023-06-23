@@ -4,8 +4,10 @@ Before starting, make sure you have Docker and Docker Compose installed.
 
 ### Clone the Repository
 
+```
 git clone https://github.com/emakrashov/rails-docker.git
 cd rails-docker
+```
 
 ### Setup Environment Variables
 
