@@ -13,4 +13,5 @@ user = User.new(
   password: 'password',
   password_confirmation: 'password'
 )
+
 user.save!
