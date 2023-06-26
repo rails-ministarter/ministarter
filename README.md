@@ -8,7 +8,7 @@ A mini-starter Rails 7.0.5 web application
 
 Before starting, make sure you have Docker and Docker Compose installed.
 
-##### Clone the Repository
+##### Clone the repository
 
 ```
 git clone https://github.com/rails-starter-docker-app/rails-docker.git
@@ -48,8 +48,8 @@ This will build the Docker image and start the application and database services
 
 Once the containers are up and running, you can access the application and Grafana in your browser.
 
-Application: http://localhost:4000
-Grafana: http://localhost:3000
+* Application: http://localhost:4000
+* Grafana: http://localhost:3000
 
 #### Setting up Grafana
 

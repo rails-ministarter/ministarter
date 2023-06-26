@@ -2,6 +2,8 @@
 ARG RUBY_VERSION=3.2.2
 FROM ruby:$RUBY_VERSION
 
+RUN set -e
+
 # Rails app lives here
 WORKDIR /rails
 
@@ -22,7 +24,7 @@ COPY . .
 RUN bundle exec bootsnap precompile --gemfile app/ lib/
 
 # Precompiling assets for production without requiring secret RAILS_MASTER_KEY
-RUN SECRET_KEY_BASE_DUMMY=1 bundle exec rails assets:precompile
+RUN SECRET_KEY_BASE=$(bin/rails secret) bundle exec rails assets:precompile
 
 # Entrypoint prepares the database.
 ENTRYPOINT ["/rails/bin/docker-entrypoint"]
