@@ -80,3 +80,5 @@ services:
           "http://localhost:3000"
         ]
       <<: *default-healthcheck
+    volumes:
+      - ./grafana/datasources:/etc/grafana/provisioning/datasources

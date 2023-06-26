@@ -46,7 +46,11 @@ This will build the Docker image and start the application and database services
 
 #### Access the application
 
-The application should now be running at http://localhost:3000.
+Once the containers are up and running, you can access the Rails application and Grafana in your browser.
+
+* Rails application http://localhost:4000
+* Grafana http://localhost:3000
+* Prometheus http://localhost:9090
 
 ### How to run tests locally
 
