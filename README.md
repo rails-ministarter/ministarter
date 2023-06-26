@@ -52,6 +52,12 @@ Once the containers are up and running, you can access the Rails application and
 * Grafana http://localhost:3000
 * Prometheus http://localhost:9090
 
+Grafana is provisioned with the default Prometheus data source via `grafana/datasources/datasources.yaml`. To test the connection,
+
+* Log in to Grafana (`admin`/`admin`)
+* Navigate to `Home` > `Connections` > `Data Sources`
+* Select `DS_PROMETHEUS`, scroll down and click on the `Test` button. Grafana will try to connect to the Prometheus instance and fetch some data. If everything is set up correctly, you should see `Successfully queried the Prometheus API.`.
+
 ### How to run tests locally
 
 #### Prepare the test database:
@@ -69,3 +75,12 @@ Now you can run the tests:
 ```
 rails test
 ```
+
+#### CI/CD
+
+In order to enable the automatic upload of Docker images to Docker Hub through the CI/CD pipeline, you must configure the following environment variables in GitHub Actions:
+
+- `DOCKER_HUB_NAMESPACE`
+- `DOCKER_HUB_REPOSITORY`
+- `DOCKER_PASSWORD`
+- `DOCKER_USERNAME`
