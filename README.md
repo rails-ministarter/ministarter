@@ -1,4 +1,8 @@
-A starter Rails 7.1 application with Devise authentication with DaisyUI, Grafana and Prometheus metrics, and Docker configuration.
+A mini-starter Rails 7.0.5 web application
+
+- Devise authentication with DaisyUI forms
+- Grafana and Prometheus metrics (using the Yabeda framework)
+- Docker container
 
 ### How to run the application using Docker
 
