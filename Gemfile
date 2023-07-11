@@ -85,3 +85,5 @@ gem 'devise', '~> 4.9'
 gem 'yabeda-prometheus'
 gem 'yabeda-puma-plugin'
 gem 'yabeda-rails'
+
+gem "tailwindcss-rails", "~> 2.0"
