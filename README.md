@@ -1,4 +1,4 @@
-A mini-starter Rails 7.0.5 web application
+A mini-starter Rails 7.0.6 web application
 
 - Devise authentication with DaisyUI forms
 - Grafana and Prometheus metrics (using the Yabeda framework)
@@ -11,7 +11,7 @@ Before starting, make sure you have Docker and Docker Compose installed.
 #### Clone the repository
 
 ```
-git clone https://github.com/rails-starter-docker-app/rails-docker
+git clone https://github.com/rails-ministarter/rails-ministarter
 cd rails-docker
 ```
 
