@@ -1,7 +1,4 @@
-# Make sure it matches the Ruby version in .ruby-version and Gemfile
-ARG RUBY_VERSION=3.2.2
-FROM ruby:$RUBY_VERSION
-
+FROM timbru31/ruby-node:3.2-18
 RUN set -e
 
 # Rails app lives here
@@ -20,6 +17,9 @@ RUN bundle install
 
 # Copy application code
 COPY . .
+
+# Run NPM install
+RUN npm install
 
 # Precompile bootsnap code for faster boot times
 RUN bundle exec bootsnap precompile --gemfile app/ lib/
