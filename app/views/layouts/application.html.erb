@@ -13,7 +13,7 @@
     <header>
       <div class="navbar bg-base-100">
         <div class="flex-1">
-          <a class="btn btn-ghost">Rails MiniStarter</a>
+          <a class="btn btn-ghost" href="/">Rails MiniStarter</a>
         </div>
         <div class="flex-none">
           <ul class="menu menu-horizontal px-5">
@@ -24,6 +24,9 @@
                     <%= current_user.email %>
                   </summary>
                   <ul class="bg-base-100">
+                    <li>
+                      <%= link_to t('nav.account_settings'), edit_user_registration_path  %>
+                    </li>
                     <li>
                       <%= button_to t('devise.sessions.sign_out'), destroy_user_session_path, method: :delete  %>
                     </li>

@@ -31,3 +31,5 @@
 
 en:
   hello: "Hello world"
+  nav:
+    account_settings: "Account settings"
