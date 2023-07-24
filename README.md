@@ -1,3 +1,5 @@
+[![Ruby on Rails CI](https://github.com/rails-ministarter/ministarter/actions/workflows/rubyonrails.yml/badge.svg)](https://github.com/rails-ministarter/ministarter/actions/workflows/rubyonrails.yml)
+
 A mini-starter Rails 7.0.6 web application
 
 - Devise authentication with DaisyUI forms
